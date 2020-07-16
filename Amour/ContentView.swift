@@ -36,8 +36,7 @@ struct ContentView: View {
                             Text("Likes")
                         }
                     }
-                Text("Conversations")
-                    .font(.title)
+                NavigationView { Channels() }.navigationBarTitle(Text("Conversations"))
                     .tabItem {
                         VStack {
                             Image(systemName: "message.fill")

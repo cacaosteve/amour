@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA7C15A624BFB191003592B3 /* Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C15A524BFB191003592B3 /* Channels.swift */; };
+		AA7C15A824BFB5FA003592B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C15A724BFB5FA003592B3 /* ViewController.swift */; };
+		AA80FA9724BD73C600A5BCB7 /* StreamChatClient in Frameworks */ = {isa = PBXBuildFile; productRef = AA80FA9624BD73C600A5BCB7 /* StreamChatClient */; };
+		AA80FA9924BD73C600A5BCB7 /* StreamChat in Frameworks */ = {isa = PBXBuildFile; productRef = AA80FA9824BD73C600A5BCB7 /* StreamChat */; };
+		AA80FA9B24BD73C600A5BCB7 /* StreamChatCore in Frameworks */ = {isa = PBXBuildFile; productRef = AA80FA9A24BD73C600A5BCB7 /* StreamChatCore */; };
+		AAC91D2524C0F5D900379390 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AAC91D2424C0F5D900379390 /* Alamofire */; };
 		AAFC29E124A6EB81003F5842 /* AmourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC29E024A6EB81003F5842 /* AmourApp.swift */; };
 		AAFC29E324A6EB81003F5842 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC29E224A6EB81003F5842 /* ContentView.swift */; };
 		AAFC29E524A6EB83003F5842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFC29E424A6EB83003F5842 /* Assets.xcassets */; };
@@ -33,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA7C15A524BFB191003592B3 /* Channels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channels.swift; sourceTree = "<group>"; };
+		AA7C15A724BFB5FA003592B3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AAFC29DD24A6EB81003F5842 /* Amour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFC29E024A6EB81003F5842 /* AmourApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmourApp.swift; sourceTree = "<group>"; };
 		AAFC29E224A6EB81003F5842 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA80FA9924BD73C600A5BCB7 /* StreamChat in Frameworks */,
+				AAC91D2524C0F5D900379390 /* Alamofire in Frameworks */,
+				AA80FA9B24BD73C600A5BCB7 /* StreamChatCore in Frameworks */,
+				AA80FA9724BD73C600A5BCB7 /* StreamChatClient in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				AAFC29E024A6EB81003F5842 /* AmourApp.swift */,
+				AA7C15A724BFB5FA003592B3 /* ViewController.swift */,
+				AA7C15A524BFB191003592B3 /* Channels.swift */,
 				AAFC29E224A6EB81003F5842 /* ContentView.swift */,
 				AAFC29E424A6EB83003F5842 /* Assets.xcassets */,
 				AAFC29E924A6EB83003F5842 /* Info.plist */,
@@ -146,6 +160,12 @@
 			dependencies = (
 			);
 			name = Amour;
+			packageProductDependencies = (
+				AA80FA9624BD73C600A5BCB7 /* StreamChatClient */,
+				AA80FA9824BD73C600A5BCB7 /* StreamChat */,
+				AA80FA9A24BD73C600A5BCB7 /* StreamChatCore */,
+				AAC91D2424C0F5D900379390 /* Alamofire */,
+			);
 			productName = Amour;
 			productReference = AAFC29DD24A6EB81003F5842 /* Amour.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +237,10 @@
 				Base,
 			);
 			mainGroup = AAFC29D424A6EB81003F5842;
+			packageReferences = (
+				AA80FA9524BD73C600A5BCB7 /* XCRemoteSwiftPackageReference "stream-chat-swift" */,
+				AAC91D2324C0F5D900379390 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = AAFC29DE24A6EB81003F5842 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7C15A624BFB191003592B3 /* Channels.swift in Sources */,
 				AAFC29E324A6EB81003F5842 /* ContentView.swift in Sources */,
+				AA7C15A824BFB5FA003592B3 /* ViewController.swift in Sources */,
 				AAFC29E124A6EB81003F5842 /* AmourApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +445,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Amour/Preview Content\"";
+				DEVELOPMENT_TEAM = 29XT7263X7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Amour/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -440,6 +467,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Amour/Preview Content\"";
+				DEVELOPMENT_TEAM = 29XT7263X7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Amour/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -574,6 +602,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA80FA9524BD73C600A5BCB7 /* XCRemoteSwiftPackageReference "stream-chat-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-chat-swift.git";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 6.0.0;
+				minimumVersion = 2.2.6;
+			};
+		};
+		AAC91D2324C0F5D900379390 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 8.0.0;
+				minimumVersion = 5.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA80FA9624BD73C600A5BCB7 /* StreamChatClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA80FA9524BD73C600A5BCB7 /* XCRemoteSwiftPackageReference "stream-chat-swift" */;
+			productName = StreamChatClient;
+		};
+		AA80FA9824BD73C600A5BCB7 /* StreamChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA80FA9524BD73C600A5BCB7 /* XCRemoteSwiftPackageReference "stream-chat-swift" */;
+			productName = StreamChat;
+		};
+		AA80FA9A24BD73C600A5BCB7 /* StreamChatCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA80FA9524BD73C600A5BCB7 /* XCRemoteSwiftPackageReference "stream-chat-swift" */;
+			productName = StreamChatCore;
+		};
+		AAC91D2424C0F5D900379390 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAC91D2324C0F5D900379390 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAFC29D524A6EB81003F5842 /* Project object */;
 }
